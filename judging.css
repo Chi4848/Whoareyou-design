@@ -1,0 +1,19 @@
+#contents{
+    text-align: center;
+}
+
+#contents #correct{
+    color: #38419D;
+}
+
+#contents #incorrect{
+    color:#B80000
+}
+
+#contents #back{
+    font-size: 18px;
+    border-radius: 10%;
+    border:none;
+    padding-inline: 10px;
+    padding-block: 5px;
+}
