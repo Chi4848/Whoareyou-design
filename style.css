@@ -1,10 +1,11 @@
-body{
+body {
     margin: 0;
 }
 
 /*共通部分*/
-.shadow{
-    box-shadow: 12px 9px 44px #000000
+.shadow {
+    box-shadow: 12px 9px 44px #000000;
+
 }
 
 /* header */
@@ -23,16 +24,127 @@ header h1 {
 
 /* main */
 
-main{
+main {
     height: 500px;
 }
 
-button{
-    background-color: lightblue;
-    border: none;
+/* 1 */
+
+.button-class {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 15%;
 }
 
-.index{
+button {
+    background-color: skyblue;
+    border-radius: 5px;
+    padding: 20px 30px;
+    font-size: 18px;
+    color: whitesmoke;
+    border-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* 2 */
+
+.name-class{
+    color: skyblue;
+    font-weight: bold;
+    font-size: 18px;
+    padding-top: 10%;
+    line-height: 15px;
+    text-indent: 1em;
+}
+
+.gimei{
+    display: flex;
+    justify-content: center;
+}
+
+
+.honmyou{
+    display: flex;
+    justify-content: center;
+}
+
+.room-class{
+    gap: 100px;
+    color: skyblue;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 15px;
+}
+
+.room{
+    display: flex;
+    justify-content: center;
+}
+
+.create-room {
+    background-color: skyblue;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 15px;
+    color: whitesmoke;
+    border-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.button-class2{
+    padding-top: 3%;
+}
+
+.textbox {
+    width: 200px;
+    height: 35px !important;
+    padding: 3px 7px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+}
+
+.textbox:focus {
+    outline: 0;
+    border: 2px solid skyblue;
+}
+
+/* 3 */
+
+.start-game {
+    background-color: sandybrown;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 15px;
+    color: whitesmoke;
+    border-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+li{
+    list-style: none;
+}
+
+
+/* 4 */
+
+.button-class3{
+    padding-top: 25%;
+}
+
+.close-room {
+    background-color: coral;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 15px;
+    color: whitesmoke;
+    border-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.index {
+    text-align: center;
     height: 400px;
     margin-block: 50px;
 }
@@ -55,8 +167,8 @@ button{
     padding-inline: 15px;
 }
 
-@media(min-width: 1000px){
-    .container{
+@media(min-width: 1000px) {
+    .container {
         width: 1000px;
         margin-inline: auto;
     }
