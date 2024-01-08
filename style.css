@@ -28,7 +28,7 @@ main {
     height: 500px;
 }
 
-/* 1 */
+/* 1 button-class*/
 
 .button-class {
     display: flex;
@@ -47,7 +47,7 @@ button {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* 2 */
+/* 2 input-name*/
 
 .name-class{
     color: skyblue;
@@ -109,10 +109,24 @@ button {
     border: 2px solid skyblue;
 }
 
-/* 3 */
+/* 3 Start */
+
+.name-list{
+    text-align: center;
+    padding: 40px 10px;
+    display: flex;
+    justify-content: center;
+    border-color: skyblue;
+    border-collapse: collapse;
+}
+
+.name-list td{
+    border: solid 2px skyblue;
+    padding: 10px 100px;
+}
 
 .start-game {
-    background-color: sandybrown;
+    background-color: skyblue;
     border-radius: 5px;
     padding: 10px 20px;
     font-size: 15px;
@@ -127,7 +141,7 @@ li{
 }
 
 
-/* 4 */
+/* 4 button-class3*/
 
 .button-class3{
     padding-top: 25%;
