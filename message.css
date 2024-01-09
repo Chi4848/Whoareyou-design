@@ -1,172 +1,120 @@
-/* main */
-
-#your_container {
-    height: 600px;
-    width: 50%;
-}
-
-/* チャットの外側部分① */
-#bms_messages_container {
-    height: 100%;
-    /*your_containerに対して100%になる */
-    width: 100%;
-    /*your_containerに対して100%になる */
-    background-color: #eee;
-}
-
-/* ヘッダー部分② */
-#bms_chat_header {
-    padding: 6px;
-    /*隙間調整*/
-    font-size: 16px;
-    height: 34px;
-    background: #ddd;
+main {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 500px;
+  }
+  
+  .chat-container {
+    margin: 20px auto;
     border: 1px solid #ccc;
-}
-
-/* ステータスマークとユーザー名 */
-#bms_chat_user_status {
-    float: left;
-    /* bms_chat_headerに対して左寄せ */
-}
-
-/* ステータスマーク */
-#bms_status_icon {
-    float: left;
-    /* bms_chat_user_statusに対して左寄せ */
-    line-height: 2em;
-    /*高さ調整*/
-}
-
-/* ユーザー名 */
-#bms_chat_user_name {
-    float: left;
-    /* bms_chat_user_statusに対して左寄せ */
-    line-height: 2em;
-    /*高さ調整*/
-    padding-left: 8px;
-}
-
-#bms_messages {
-    overflow: auto;
-    height: 100%;
-    border-right: 1px solid #ddd;
-    border-left: 1px solid #ddd;
-    background-color: #eee;
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2) inset;
-}
-
-
-.bms_message {
-    margin: 0px;
-    padding: 0 14px;
-    font-size: 16px;
-    word-wrap: break-word;
-    white-space: normal;
-}
-
-.bms_left {
-    float: left;
-    line-height: 1.3em;
-}
-
-.bms_right {
-    float: right;
-    line-height: 1.3em;
-}
-
-.bms_clear {
-    clear: both;
-}
-
-
-#bms_send {
-    background-color: #eee;
-    border-right: 1px solid #ddd;
-    border-left: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-    height: 48px;
-    padding: 4px;
-}
-
-#bms_send_message {
-    width: calc(100% - 75px);
-    line-height: 16px;
-    height: 48px;
-    padding: 14px 6px 0px 6px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    text-align: left;
-    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.2) inset;
-    box-sizing: border-box;
-
-}
-
-#bms_send_btn {
-    width: 72px;
-    height: 48px;
-    font-size: 16px;
-    line-height: 3em;
-    float: right;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 398px;
+  }
+  
+  .chat-header {
+    background-color: skyblue;
     color: #fff;
-    font-weight: bold;
-    background: #bcbcbc;
-    text-align: center;
-    border: 1px solid #bbb;
+    padding: 10px;
+    /* text-align: center; */
+  }
+  
+  .messages-container {
+    padding: 10px;
+    overflow-y: auto;
+    max-height: 300px;
+  }
+  
+  .message {
+    padding: 18px 10px;
+    margin-bottom: 8px;
+    border-radius: 30px;
+    width: 500px;
+  }
+  
+  .user-message {
+    background-color: #e0e0e0;
+  }
+  
+  .bot-message {
+    background-color: #f2f2f2;
+  }
+  
+  .input-container {
+    display: flex;
+    padding: 10px;
+  }
+  
+  input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box;
-}
-
-#bms_send_btn:hover {
-    background: powderblue;
+    margin-top: 200px;
+  }
+  
+  button {
+    padding: 8px;
+    margin-left: 8px;
+    background-color: skyblue;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
     cursor: pointer;
+    margin-top: 200px;
+  }
+
+  body {
+    margin: 0;
+}
+
+/*共通部分*/
+.shadow {
+    box-shadow: 12px 9px 44px #000000;
+
+}
+ 
+/* header */
+
+header {
+    height: 90px;
+    background-color: skyblue;
+}
+
+header h1 {
+    text-align: center;
+    padding-block: 20px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* footer */
+.copyright {
+    background-color: skyblue;
+    padding-block: 15px;
+}
+
+.copyright p {
+    text-align: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.index {
+    text-align: center;
+    height: 400px;
+    margin-block: 50px;
+}
+
+.container {
+    padding-inline: 15px;
 }
 
 
-.bms_message {
-    ・・・
-}
-
-.bms_message_box {
-    margin-top: 20px;
-    max-width: 100%;
-    font-size: 16px;
-}
-
-.bms_message_content {
-    padding: 20px;
-    /*文字や画像（コンテンツ）の外側に隙間を入れる*/
-}
-
-/* メッセージ１（左側） */
-.bms_left {
-    float: left;
-    /*吹き出しをbms_messagesに対して左寄せ*/
-    line-height: 1.3em;
-}
-
-.bms_left .bms_message_box {
-    color: #333;
-    /*テキストを黒にする*/
-    background: #fff;
-    border: 2px solid powderblue;
-    border-radius: 30px 30px 30px 0px;
-    /*左下だけ尖らせて吹き出し感を出す*/
-    margin-right: 50px;
-    /*左側の発言だとわかる様に、吹き出し右側に隙間を入れる*/
-}
-
-/* メッセージ２（右側） */
-.bms_right {
-    float: right;
-    line-height: 1.3em;
-}
-
-.bms_right .bms_message_box {
-    color: black;
-    background: powderblue;
-    border: 2px solid powderblue;
-    border-radius: 30px 30px 0px 30px;
-    margin-left: 50px;
+@media(min-width: 1000px) {
+    .container {
+        width: 1000px;
+        margin-inline: auto;
+    }
 }
 
